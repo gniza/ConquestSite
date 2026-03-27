@@ -171,7 +171,10 @@ nav a:hover { color: var(--primary-color); }
 }
 
 .btn-primary, .btn-secondary {
-    padding: 2vh;
+    padding: 15px 40px;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
     font-family: var(--font-heading);
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -183,24 +186,6 @@ nav a:hover { color: var(--primary-color); }
 .btn-primary {
     background: var(--primary-color);
     color: #fff;
-    box-shadow: 0 10px 20px #c4b00062;
-    color: rgba(255, 255, 255, 0.1); /* Texto quase invisível no fundo escuro */
-  
-  /* O feixe de luz branca no meio de tons escuros */
-  background: linear-gradient(
-    -45deg, 
-    rgba(238, 255, 0, 0.966) 40%, 
-    #ffffff 50%, 
-    rgb(238, 234, 4) 60%
-  );
-  
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  
-  /* A animação faz o feixe de luz atravessar a palavra */
-  animation: luzPassando 3s linear infinite;
 }
 
 @keyframes luzPassando {
@@ -223,7 +208,7 @@ nav a:hover { color: var(--primary-color); }
 
 .btn-primary:hover {
     transform: translateY(-5px);
-    box-shadow: 1px 10px 30px yellow;
+    box-shadow: 1px 1px 10px rgba(255, 255, 0, 0.466);
     
 
 

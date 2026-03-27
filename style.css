@@ -517,3 +517,10 @@ a.whatsapp-float{
 img.logo{
     width: 100px;
 }
+
+@media (max-width: 768px) {
+    .hero{
+        background-attachment: scroll;
+        background-position: center;
+    }
+}

@@ -124,7 +124,7 @@ nav a:hover { color: var(--primary-color); }
     text-align: center;
     position: relative;
     background: url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
-    background-attachment: absolute; /* Efeito Parallax */
+    background-attachment: fixed; /* Efeito Parallax */
 }
 
 .hero-overlay {

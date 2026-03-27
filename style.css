@@ -28,7 +28,7 @@ body {
     background-color: var(--dark-bg);
     color: var(--text-light);
     font-family: var(--font-body);
-    line-height: 1.6;
+    line-height: 1;
     overflow-x: hidden;
 }
 
@@ -40,6 +40,7 @@ body {
 
 .highlight {
     color: var(--primary-color);
+    
 }
 
 /* ==========================================================================
@@ -182,12 +183,50 @@ nav a:hover { color: var(--primary-color); }
 .btn-primary {
     background: var(--primary-color);
     color: #fff;
-    box-shadow: 0 10px 20px #c4b00062
+    box-shadow: 0 10px 20px #c4b00062;
+    color: rgba(255, 255, 255, 0.1); /* Texto quase invisível no fundo escuro */
+  
+  /* O feixe de luz branca no meio de tons escuros */
+  background: linear-gradient(
+    -45deg, 
+    rgba(238, 255, 0, 0.966) 40%, 
+    #ffffff 50%, 
+    rgb(238, 234, 4) 60%
+  );
+  
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* A animação faz o feixe de luz atravessar a palavra */
+  animation: luzPassando 3s linear infinite;
 }
 
+@keyframes luzPassando {
+  0% { background-position: -100% center; }
+  100% { background-position: 200% center; }
+}
+    
+
+
+/* 5. A animação que move a posição do fundo */
+@keyframes moverGradiente {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 300% center;
+  }
+}
+
+
 .btn-primary:hover {
-    background: var(--primary-hover);
     transform: translateY(-5px);
+    box-shadow: 1px 10px 30px yellow;
+    
+
+
 }
 
 .btn-secondary {
@@ -524,3 +563,4 @@ img.logo{
         background-position: center;
     }
 }
+

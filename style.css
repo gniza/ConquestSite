@@ -208,7 +208,7 @@ nav a:hover { color: var(--primary-color); }
 
 .btn-primary:hover {
     transform: translateY(-5px);
-    box-shadow: 1px 1px 10px rgba(255, 255, 0, 0.466);
+    box-shadow: 1px 1px 10px yellow;
     
 
 

@@ -549,3 +549,16 @@ img.logo{
     }
 }
 
+@media (max-width: 768px) {
+    .hero-content.reveal{
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cellphone{
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
